@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "your-api.csproj",
+      "use": "@vercel/dotnet-builder"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/Weathers",
+      "dest": "http://localhost:5125/api/Weathers"
+    }
+  ]
+}

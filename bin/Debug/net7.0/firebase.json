@@ -1,0 +1,21 @@
+{ 
+    "functions": {
+      "source": "path/to/your/functions",
+      "runtime": "dotnet3",
+      "https": {
+        "function": "app"
+      }
+    },
+    "database": {
+      "rules": "databaserules.jason"
+    },
+    "hosting": {
+      "public": "path/to/your/webapp",
+      "rewrites": [
+        {
+          "source": "api/weathers",
+          "function": "app"
+        }
+      ]
+    }
+}
